@@ -28,8 +28,11 @@ h1 {
   font-weight: 700;
   line-height: normal;
   padding-top: 217px;
-  width: 760px;
   padding-bottom: 32px;
+}
+
+.top h1 {
+  width: 760px;
 }
 
 .subtitle {
@@ -40,6 +43,9 @@ h1 {
   font-weight: 300;
   line-height: 32px;
   padding-bottom: 44px;
+}
+
+.top .subtitle {
   width: 481px;
 }
 
@@ -55,6 +61,7 @@ h1 {
   padding: 13px 74px;
   border: none;
 }
+
 .red_button:hover {
   background: #FFF;
   color: #9C0332;
@@ -84,8 +91,9 @@ h1 {
   box-sizing: border-box;
   border-radius: 15px;
 }
-.item:hover{
-border: 2px solid #9C0332;
+
+.item:hover {
+  border: 2px solid #9C0332;
 }
 
 .item-1 {
@@ -110,13 +118,47 @@ border: 2px solid #9C0332;
   padding: 32px;
 }
 
+.time {
+  background-color: #000915;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 64px;
+  justify-content: space-between;
+}
+
+
+.time-inner {
+  width: 50%;
+}
+
+.seasons {
+  font-size: 48px;
+  padding-top: 0;
+}
+
+.play {
+  background-image: url(img/play.png);
+  height: 333px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 485px;
+
+
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  h1 {
+  .top h1, h1 {
     color: #FFF;
     text-align: center;
     font-size: 32px;
@@ -126,7 +168,7 @@ border: 2px solid #9C0332;
     width: auto;
   }
 
-  .subtitle {
+  .top .subtitle, .subtitle {
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -145,6 +187,25 @@ border: 2px solid #9C0332;
 
   .red_button {
     width: max-content;
+
+  }
+
+  .time {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .play {
+    width: 100%;
+    background-size: contain;
+  }
+
+  .time-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
   }
 }
 
