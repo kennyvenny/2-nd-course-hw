@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background-image: url(./img/fon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1024px;
+}
+
+h1 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 217px;
+  padding-bottom: 32px;
+}
+
+.top h1 {
+  width: 760px;
+}
+
+.subtitle {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+
+.top .subtitle {
+  width: 481px;
+}
+
+.red_button {
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 13px 74px;
+  border: none;
+}
+
+.red_button:hover {
+  background: #FFF;
+  color: #9C0332;
+}
+
+.games {
+  display: flex;
+  background-color: #000915;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.item {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 379px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.item:hover {
+  border: 2px solid #9C0332;
+}
+
+.item-1 {
+  background-image: url(img/game1.png);
+}
+
+.item-2 {
+  background-image: url(img/game2.png);
+}
+
+.item-3 {
+  background-image: url(img/game3.png);
+}
+
+.name {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  padding: 32px;
+}
+
+.time {
+  background-color: #000915;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 64px;
+  justify-content: space-between;
+}
+
+
+.time-inner {
+  width: 50%;
+}
+
+.seasons {
+  font-size: 48px;
+  padding-top: 0;
+}
+
+.play {
+  background-image: url(img/play.png);
+  height: 333px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 485px;
+
+
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .top h1, h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: auto;
+  }
+
+  .top .subtitle, .subtitle {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    width: auto;
+    text-align: center;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 735px;
+  }
+
+  .red_button {
+    width: max-content;
+
+  }
+
+  .time {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .play {
+    width: 100%;
+    background-size: contain;
+  }
+
+  .time-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
