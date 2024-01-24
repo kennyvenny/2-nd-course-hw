@@ -131,6 +131,10 @@ h1 {
   justify-content: space-between;
 }
 
+.time__revert {
+  flex-direction: row-reverse;
+}
+
 
 .time-inner {
   width: 50%;
@@ -152,13 +156,22 @@ h1 {
 
 }
 
+.play-words {
+  background-image: url(img/play2.png);
+  height: 333px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 485px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .top h1, h1 {
+  .top h1, h1.seasons {
     color: #FFF;
     text-align: center;
     font-size: 32px;
@@ -167,6 +180,7 @@ h1 {
     line-height: normal;
     width: auto;
   }
+  
 
   .top .subtitle, .subtitle {
     color: #FFF;
@@ -197,6 +211,11 @@ h1 {
 
 
   .play {
+    width: 100%;
+    background-size: contain;
+  }
+
+  .play-words {
     width: 100%;
     background-size: contain;
   }
